@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Boas-Vindas Placard</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #111;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+    }
+
+    .container {
+      background-color: #1c1c1c;
+      border-radius: 20px;
+      max-width: 400px;
+      width: 100%;
+      padding: 20px;
+      box-shadow: 0 0 15px #990000;
+      animation: fadeIn 1s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    section {
+      margin-bottom: 25px;
+      animation: slideUp 0.8s ease forwards;
+      opacity: 0;
+    }
+
+    section:nth-child(1) { animation-delay: 0.2s; }
+    section:nth-child(2) { animation-delay: 0.4s; }
+    section:nth-child(3) { animation-delay: 0.6s; }
+    section:nth-child(4) { animation-delay: 0.8s; }
+    section:nth-child(5) { animation-delay: 1s; }
+
+    @keyframes slideUp {
+      to { opacity: 1; transform: translateY(0); }
+      from { opacity: 0; transform: translateY(20px); }
+    }
+
+    .header {
+      text-align: center;
+    }
+
+    .header h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      color: #ff4d4d;
+    }
+
+    .header h2 {
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: #ddd;
+    }
+
+    .bonus-info {
+      background-color: #2b2b2b;
+      padding: 15px;
+      border-radius: 15px;
+      font-size: 1rem;
+      text-align: center;
+    }
+
+    .btn-criar {
+      display: block;
+      background-color: #e60000;
+      color: white;
+      text-align: center;
+      padding: 18px;
+      border-radius: 50px;
+      font-weight: bold;
+      font-size: 1.2rem;
+      text-decoration: none;
+      box-shadow: 0 0 12px #cc0000;
+      transition: background 0.3s ease;
+    }
+
+    .btn-criar:hover {
+      background-color: #cc0000;
+    }
+
+    .noticias {
+      background: rgba(255, 255, 255, 0.08);
+      padding: 12px;
+      border-radius: 12px;
+      font-size: 0.95rem;
+      text-align: center;
+    }
+
+    .compartilhar {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      background-color: #202020;
+      padding: 15px;
+      border-radius: 15px;
+      text-align: center;
+    }
+
+    .compartilhar a {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background-color: #25D366;
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 40px;
+      font-weight: 700;
+      box-shadow: 0 0 10px #25D366;
+    }
+
+    .compartilhar svg {
+      width: 20px;
+      height: 20px;
+      fill: white;
+    }
+
+    .percentual {
+      font-size: 0.9rem;
+      color: #ff9999;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <section class="header">
+      <h1>🎁 BÔNUS DE BOAS-VINDAS</h1>
+      <h2>Ganhe até <strong>5.000 MT</strong> no seu primeiro depósito</h2>
+    </section>
+
+    <section class="bonus-info">
+      Basta registrar e depositar a partir de 100MT para receber seu bônus automaticamente.
+    </section>
+
+    <section>
+      <a href="https://media1.placard.co.mz/redirect.aspx?pid=2204&bid=1690" target="_blank" class="btn-criar">
+        CRIAR CONTA AGORA 🚀
+      </a>
+    </section>
+
+    <section class="noticias" id="noticia">
+      Joana acabou de ganhar 4.900MT de bônus + 20.000MT em prêmios! 🎉
+    </section>
+
+    <section class="compartilhar">
+      <div>👥 Partilhe com amigos e ganhe até <span class="percentual">+30% de bônus</span></div>
+      <a href="https://wa.me/?text=🎁%20Ganhe%20até%205.000MT%20de%20bônus%20no%20Placard!%20Registe-se%20aqui:%20https://media1.placard.co.mz/redirect.aspx?pid=2204&bid=1690" target="_blank">
+        <svg viewBox="0 0 32 32"><path d="M16 .002C7.164.002 0 7.163 0 15.997a15.9 15.9 0 0 0 2.326 8.322L.042 32l7.837-2.27a15.934 15.934 0 0 0 8.121 2.2h.001C24.837 31.93 32 24.767 32 15.998 32 7.163 24.837.002 16 .002zm0 29.336a13.317 13.317 0 0 1-6.77-1.857l-.485-.29-4.648 1.345 1.388-4.529-.316-.465A13.298 13.298 0 0 1 2.683 16c0-7.366 5.96-13.335 13.317-13.335 7.35 0 13.317 5.969 13.317 13.335 0 7.349-5.967 13.338-13.317 13.338zm3.97-9.588c-.219-.11-1.293-.637-1.493-.71s-.346-.11-.493.11c-.144.22-.566.71-.694.857-.127.146-.255.165-.474.055-.219-.11-.925-.34-1.762-1.084-.652-.582-1.093-1.302-1.221-1.522-.127-.22-.014-.337.096-.447.099-.098.22-.255.33-.382.11-.127.146-.219.22-.365.073-.146.037-.275-.018-.384-.055-.11-.493-1.187-.675-1.63-.18-.433-.365-.373-.493-.382l-.42-.007c-.128 0-.338.047-.515.22s-.676.66-.676 1.613c0 .952.693 1.87.79 2.002.096.128 1.365 2.09 3.306 2.932.462.199.822.317 1.103.405.463.147.884.126 1.217.077.371-.055 1.293-.527 1.478-1.036.182-.509.182-.946.127-1.036-.055-.091-.201-.146-.42-.256z"/></svg>
+        Partilhar no WhatsApp
+      </a>
+    </section>
+  </div>
+
+  <script>
+    const nomes = ["Carlos", "Ana", "Pedro", "Joana", "Mateus", "Beatriz", "Ricardo", "Fátima"];
+    const noticia = document.getElementById("noticia");
+
+    function gerarNoticia() {
+      const nome = nomes[Math.floor(Math.random() * nomes.length)];
+      const bonus = Math.floor(Math.random() * 2001) + 3000;
+      const premios = Math.floor(Math.random() * 20001) + 10000;
+      noticia.textContent = `${nome} acabou de ganhar ${bonus}MT de bônus + ${premios}MT em prêmios! 🎉`;
+    }
+
+    setInterval(gerarNoticia, 5000);
+  </script>
+</body>
+</html>
